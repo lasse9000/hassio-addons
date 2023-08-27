@@ -56,7 +56,7 @@
   "image": "ghcr.io/alexbelgium/unpackerr-{arch}",
   "init": false,
   "map": [
-    "config:rw",
+    "config:r",
     "share:rw",
     "media:rw",
     "ssl"
@@ -65,8 +65,7 @@
   "options": {
     "PGID": 1000,
     "PUID": 1000,
-    "extraction_path": "/share/downloads_packed",
-    "watch_path": "/share/downloads_unpacked"
+    
   },
   "privileged": [
     "SYS_ADMIN",
